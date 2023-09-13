@@ -1,0 +1,167 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(2, 2, 94);
+}
+.container{
+    width: 80%;
+    height: auto;
+  
+    margin: auto;
+}
+
+
+.container h1{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    color: gray;
+}
+
+
+.container input{
+    height: 60px;
+    width: 80%;
+    background-color: grey;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.container .tasks button{
+    width: 13%;
+    height: 60px;
+    border: 6px solid green;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-left: 20px;
+    background-color: transparent;
+    color: green;
+    font-weight: 900;
+}
+
+
+
+.alltasks{
+    width: 80%;
+    height: auto;
+   
+    margin: auto;
+    margin-top: 20px;
+}
+
+.alltasks h1{
+    color: aliceblue;
+}
+
+.alltasks>div{
+  
+    display: flex;
+    margin-top: 20px;
+}
+
+.alltasks>div>input{
+    width: 80%;
+    height: 60px;
+    background-color: whitesmoke;
+
+border: 5px solid darkblue;
+border-radius: 20px;
+}
+
+
+
+.alltasks .edit button{
+    height: 60px;
+    width: 120px;
+    border: 5px solid greenyellow;
+border-radius: 20px;
+background-color: transparent;
+font-size: 25px;;
+color: yellowgreen;
+cursor: pointer;
+}
+
+
+
+.alltasks .update button{
+    height: 60px;
+    width: 120px;
+    border: 5px solid greenyellow;
+border-radius: 20px;
+background-color: transparent;
+font-size: 25px;;
+color: yellowgreen;
+cursor: pointer;
+}
+
+.alltasks .delete button{
+    height: 60px;
+    width: 120px;
+    border: 5px solid red;
+border-radius: 20px;
+background-color: transparent;
+font-size: 25px;
+cursor: pointer;
+}
+
+
+
+@media (max-width: 650px){
+    .tasks{
+        display: flex;
+    }
+
+
+    .container .tasks button{
+        width: 18%;
+      
+    }
+    .alltasks>div>input{
+        width: 500px;
+        height: 60px;
+        background-color: whitesmoke;
+    
+    border: 5px solid darkblue;
+    border-radius: 20px;
+    }
+    
+
+
+    .alltasks .delete button{
+        height: 60px;
+        width: 60px;
+        border: 5px solid red;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    }
+    .alltasks .edit button{
+        height: 60px;
+        width: 60px;
+        border: 5px solid greenyellow;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 20px;;
+    color: yellowgreen;
+    cursor: pointer;
+    }
+
+
+    .alltasks .update button{
+        height: 60px;
+        width: 60px;
+        border: 5px solid greenyellow;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 20px;;
+    color: yellowgreen;
+    cursor: pointer;
+    
+    }
+
+}
