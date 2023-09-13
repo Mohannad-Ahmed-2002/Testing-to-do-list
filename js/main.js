@@ -30,10 +30,10 @@ let deleteTask = (i) => {
 let editTask = (i) => {
   inputTask= document.querySelectorAll(".alltasks input");
 editbtn=document.querySelectorAll(".edit");
-inputTask[i].setAttribute("readonly" , "readonly");
-editbtn[i].innerHTML="Update";
+inputTask[i].removeAttribute("readonly" , "readonly");
+editbtn[i].innerHTML="<button class=update>update</button>"
 
-editbtn[i].classList.replace("edit" , "update")
+
 editbtn[i].setAttribute("onclick", `updateTask(${i})`);
 
 }
@@ -41,10 +41,10 @@ editbtn[i].setAttribute("onclick", `updateTask(${i})`);
 
 let updateTask = (i) => {
   inputTask= document.querySelectorAll(".alltasks input");
-  editbtn=document.querySelectorAll(".update");
-  inputTask[i].removeAttribute("readonly" , "readonly");
-  editbtn[i].innerHTML="edit";
-  editbtn[i].classList.replace("update" , "edit")
+  editbtn=document.querySelectorAll(".edit");
+  inputTask[i].setAttribute("readonly" , "readonly");
+  editbtn[i].innerHTML="<button class=edit>edit</button>";
+ 
   editbtn[i].setAttribute("onclick", `editTask(${i})`);
   AllTasks[i].task=inputTask[i].value;
 }
